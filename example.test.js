@@ -6,6 +6,7 @@ import { render, mount, shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 import TestRenderer from "react-test-renderer";
 import ReactDOMServer from 'react-dom/server';
+import prettier from "prettier";
 
 const tests = [
     {
@@ -57,7 +58,12 @@ const tests = [
         name: "reactDOMServer.renderToStaticMarkup",
         render: ReactDOMServer.renderToStaticMarkup,
         serialize: wrapper => wrapper
-    }
+    },
+    {
+        name: "reactDOMServer.renderToStaticMarkup + prettier",
+        render: ReactDOMServer.renderToStaticMarkup,
+        serialize: wrapper => prettier.format(wrapper)
+    },
 ];
 
 const examples = [
