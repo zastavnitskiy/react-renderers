@@ -104,6 +104,8 @@ Object {
 }
 `;
 
+exports[`button - reactDOMServer.renderToStaticMarkup 1`] = `"<button class=\\"b-btn\\"><span class=\\"b-btn__text\\">Hello</span></button>"`;
+
 exports[`input - enzyme-mount-renderer 1`] = `"<div class=\\"b-container\\"><div class=\\"b-input\\"><input class=\\"b-input__input\\" value=\\"Type here\\"><button class=\\"b-btn\\"><span class=\\"b-btn__text\\">Send</span></button></div></div>"`;
 
 exports[`input - enzyme-mount-renderer enzyme-to-json 1`] = `
@@ -1401,3 +1403,5 @@ Object {
   "type": "div",
 }
 `;
+
+exports[`input - reactDOMServer.renderToStaticMarkup 1`] = `"<div class=\\"b-container\\"><div class=\\"b-input\\"><input class=\\"b-input__input\\" value=\\"Type here\\"/><button class=\\"b-btn\\"><span class=\\"b-btn__text\\">Send</span></button></div></div>"`;

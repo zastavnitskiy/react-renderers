@@ -5,6 +5,7 @@ import { render, mount, shallow } from "enzyme";
 
 import toJson from "enzyme-to-json";
 import TestRenderer from "react-test-renderer";
+import ReactDOMServer from 'react-dom/server';
 
 const tests = [
     {
@@ -51,6 +52,11 @@ const tests = [
         name: "react-test-renderer toTree",
         render: TestRenderer.create,
         serialize: wrapper => wrapper.toTree()
+    },
+    {
+        name: "reactDOMServer.renderToStaticMarkup",
+        render: ReactDOMServer.renderToStaticMarkup,
+        serialize: wrapper => wrapper
     }
 ];
 
