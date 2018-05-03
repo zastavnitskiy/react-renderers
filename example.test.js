@@ -50,11 +50,6 @@ const tests = [
         serialize: wrapper => wrapper.toJSON()
     },
     {
-        name: "react-test-renderer toTree",
-        render: TestRenderer.create,
-        serialize: wrapper => wrapper.toTree()
-    },
-    {
         name: "reactDOMServer.renderToStaticMarkup",
         render: ReactDOMServer.renderToStaticMarkup,
         serialize: wrapper => wrapper
